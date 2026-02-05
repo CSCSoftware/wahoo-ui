@@ -1,0 +1,12 @@
+# Binaries
+wahoo-ui.exe
+wahoo-ui
+wahoo-ui-*
+
+# Store directory (contains WhatsApp session)
+store/
+
+# IDE
+.idea/
+.vscode/
+*.swp

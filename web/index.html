@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>wahoo - WhatsApp</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="app">
+        <!-- Sidebar with chat list -->
+        <aside class="sidebar">
+            <header class="sidebar-header">
+                <h1>wahoo</h1>
+                <span id="status" class="status disconnected">Verbinde...</span>
+            </header>
+            <div class="search-box">
+                <input type="text" id="search" placeholder="Chat suchen...">
+            </div>
+            <div id="chat-list" class="chat-list">
+                <!-- Chats loaded dynamically -->
+            </div>
+        </aside>
+
+        <!-- Main chat area -->
+        <main class="chat-area">
+            <div id="no-chat" class="no-chat">
+                <p>Wähle einen Chat aus</p>
+            </div>
+
+            <div id="chat-view" class="chat-view hidden">
+                <header class="chat-header">
+                    <div class="chat-info">
+                        <h2 id="chat-name">Chat Name</h2>
+                        <span id="chat-jid" class="chat-jid"></span>
+                    </div>
+                </header>
+
+                <div id="messages" class="messages">
+                    <!-- Messages loaded dynamically -->
+                </div>
+
+                <footer class="message-input">
+                    <input type="text" id="message-text" placeholder="Nachricht eingeben...">
+                    <button id="send-btn">Senden</button>
+                </footer>
+            </div>
+        </main>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
