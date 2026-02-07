@@ -10,3 +10,8 @@ store/
 .idea/
 .vscode/
 *.swp
+
+# Internal docs and scripts
+.claude/
+build.bat
+.aidex/
